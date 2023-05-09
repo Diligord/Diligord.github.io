@@ -2,7 +2,32 @@
 <html>
 <body>
   <style>
+  body{
+  background-image: url('catvibe.gif');
+  }
+	
+	@keyframes animatedBackground {
+  0% {
+	background-size: 100vh
+  }
+  .001% {
+    background-position: 100% 0;
+	background-size: 10vh
+  }
+  100% {
+    background-position: 2000000% 0;
+  }
+}
+#animate-area {
+  height: 100vh;
+  background-image: url('catvibe.gif');
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  animation: animatedBackground 99999s linear infinite;
+}
   </style>
-  <p> Placeholder website</p>
+  <p></p>
+  <div id="animate-area"></div>
 </body>
+<audio src="song2.mp3" autoplay></audio>
 </html>
